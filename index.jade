@@ -1,0 +1,146 @@
+//output:index.html
+doctype html
+html
+	head
+		link( rel="stylesheet", type="text/css", href="style/myindex.css")
+		link( href="https://fonts.googleapis.com/css?family=Economica:700", rel="stylesheet")
+		script(src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js")
+		link( rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		script( src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+		script( src="scroll.js")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Francisco Fraga
+	body
+		div#cover
+					nav#mynav( data-spy="affix" data-offset-top="1")
+						a#nav-about(href="#about") ABOUT
+						a#nav-proj PROJECTS
+						a#nav-res RESUME
+						a#nav-cont CONTACT
+					nav.balls
+						a#ball-1(href="#cover")
+						a#ball-2(href="#about")
+						a#ball-3(href="")
+						a#ball-4(href="")
+					h1#name
+						|FRANCISCO FRAGA
+		div.about#about
+					h1.atitle
+						|ABOUT ME
+					div#me
+						img#myphoto(src="img/me.jpg")
+					
+					div#atext
+						p Hello, in case you didn't noticed my name is Francisco and I was born on the 3rd of August, 1995 at Porto. All my education before university took place in my hometown, Mirandela, that is a little city located at the North of Portugal. I played table tennis from 6 to 19 years old, I was very happy but decided to stop because I moved to Porto to study and I didn't had time to practice. I currently study in Faculdade de Engenharia da Universidade do Porto attending the Master in Electrical and Computer Engineering. Some of my biggest interests are sports, administration of computer systems and networks and I consider myself a code enthusiast.
+					h1.atitle1
+						|LANGUAGE SKILLS
+					table#languages
+						tbody.ltable
+							tr.myline-portuguese
+								td.mytitle-portuguese PORTUGUESE
+								td.rate-fill-portuguese-1
+								td.rate-fill-portuguese-2
+								td.rate-fill-portuguese-3
+								td.rate-fill-portuguese-4
+								td.rate-fill-portuguese-5
+								td.rate-fill-portuguese-6
+							tr.myline-english
+								td.mytitle-english ENGLISH
+								td.rate-fill-english-1
+								td.rate-fill-english-2
+								td.rate-fill-english-3
+								td.rate-fill-english-4
+								td.rate-english-5
+								td.rate-english-6
+							tr.myline-spanish
+								td.mytitle-spanish SPANISH
+								td.rate-fill-spanish-1
+								td.rate-fill-spanish-2
+								td.rate-fill-spanish-3
+								td.rate-spanish-4
+								td.rate-spanish-5
+								td.rate-spanish-5
+					h1.atitle1
+						|ACHIEVEMENTS	
+					div.achiv
+						h1.atext2
+							div.achivnr1 Four times Table Tennis Portuguese Teams National Champion (U10 / U12 / U15 / U18)
+							div.achivnr2 Table Tennis Portuguese Mixed Doubles National Champion (U12)
+							div.achivnr3 Table Tennis Iberian Teams Champion (U12)
+							div.achivnr4 Two times Table Tennis Portuguese University Teams National Champion
+					h1.atitle1
+						|EDUCATION
+					div.achiv
+						h1.atext2
+							a(href="http://aemirandela.org/aem/" target="_blank")#secundary
+								div.edunr1 Escola Secundária de Mirandela
+												p#p1 High School
+							a(href="https://sigarra.up.pt/fcup/pt/web_page.inicial" target="_blank")#secundary
+								div.edunr2 Faculdade de Ciências da Universidade do Porto (2013-2014)
+													p#p2 Master in Network and Informatics Systems Engineering
+							a(href="https://sigarra.up.pt/feup/pt/web_page.Inicial" target="_blank")#secundary
+								div.edunr3 Faculdade de Engenharia da Universidade do Porto (2014-Present)
+													p#p3 Master in Electrical and Computers Engineering
+													p#p3 Telecommunications, Electronics and Computers Area
+					h1.atitle1
+						|CODING SKILLS
+						table#myskills
+							tbody.stable
+								tr.myline-html
+									td.mytitle-html HTML5 / CSS
+									td.rate-fill-html-1
+									td.rate-fill-html-2
+									td.rate-fill-html-3
+									td.rate-fill-html-4
+									td.rate-fill-html-5
+									td.rate-html-6
+								tr.myline-java
+									td.mytitle-java JAVA
+									td.rate-fill-java-1
+									td.rate-fill-java-2
+									td.rate-fill-java-3
+									td.rate-fill-java-4
+									td.rate-java-5
+									td.rate-java-6
+								tr.myline-myc
+									td.mytitle-myc C
+									td.rate-fill-myc-1
+									td.rate-fill-myc-2
+									td.rate-fill-myc-3
+									td.rate-fill-myc-4
+									td.rate-myc-5
+									td.rate-myc-6
+								tr.myline-js
+									td.mytitle-js JAVASCRIPT
+									td.rate-fill-js-1
+									td.rate-fill-js-2
+									td.rate-fill-js-3
+									td.rate-fill-js-4
+									td.rate-js-5
+									td.rate-js-6
+								tr.myline-cpp
+									td.mytitle-cpp C++
+									td.rate-fill-cpp-1
+									td.rate-fill-cpp-2
+									td.rate-fill-cpp-3
+									td.rate-cpp-4
+									td.rate-cpp-5
+									td.rate-cpp-6
+								tr.myline-assembly
+									td.mytitle-assembly ASSEMBLY / MIPS32
+									td.rate-fill-assembly-1
+									td.rate-fill-assembly-2
+									td.rate-fill-assembly-3
+									td.rate-assembly-4
+									td.rate-assembly-5
+									td.rate-assembly-6
+								tr.myline-verilog
+									td.mytitle-verilog VERILOG
+									td.rate-fill-verilog-1
+									td.rate-fill-verilog-2
+									td.rate-fill-verilog-3
+									td.rate-verilog-4
+									td.rate-verilog-5
+									td.rate-verilog-6
+		div.footer
+			H1 FOOTER
