@@ -1,11 +1,11 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 700) {
+    if (scroll >= 600) {
         $(".balls").addClass("scrollabout");
     } else {
         $(".balls").removeClass("scrollabout");
     }
-    if (scroll >= 500) {
+    if (scroll >= 400) {
         $(".about").addClass("style11b");
     } else {
         $(".about").removeClass("style11b");
@@ -50,12 +50,12 @@ $(window).scroll(function() {
     } else {
         $(".about").removeClass("scroll-achiv4");
     }
-    if (scroll >= 1950) {
+    if (scroll >= 1900) {
         $(".about").addClass("scroll-edu1");
     } else {
         $(".about").removeClass("scroll-edu1");
     }
-    if (scroll >= 2000) {
+    if (scroll >= 1975) {
         $(".about").addClass("scroll-edu2");
     } else {
         $(".about").removeClass("scroll-edu2");
@@ -65,22 +65,32 @@ $(window).scroll(function() {
     } else {
         $(".about").removeClass("scroll-edu3");
     }
-    if (scroll >= 2400) {
+    if (scroll >= 2125) {
+        $(".about").addClass("scroll-edu4");
+    } else {
+        $(".about").removeClass("scroll-edu4");
+    }
+    if (scroll >= 2200) {
+        $(".about").addClass("scroll-edu5");
+    } else {
+        $(".about").removeClass("scroll-edu5");
+    }
+    if (scroll >= 2550) {
         $(".about").addClass("scroll-skill1");
     } else {
         $(".about").removeClass("scroll-skill1");
     }
-    if (scroll >= 2475) {
+    if (scroll >= 2625) {
         $(".about").addClass("scroll-skill2");
     } else {
         $(".about").removeClass("scroll-skill2");
     }
-    if (scroll >= 2550) {
+    if (scroll >= 2700) {
         $(".about").addClass("scroll-skill3");
     } else {
         $(".about").removeClass("scroll-skill3");
     }
-    if (scroll >= 2625) {
+    if (scroll >= 2775) {
         $(".about").addClass("scroll-skill4");
     } else {
         $(".about").removeClass("scroll-skill4");
