@@ -1,5 +1,5 @@
 #name
-  margin-top: 250px
+  margin-top: 230px
   position: relative
   margin-left: auto
   margin-right: auto
@@ -8,9 +8,22 @@
   font-size: 50px
   color: black
   z-index: 3
-  width: 50%
+  width: 36%
   background-opacity: 100%
+  padding-bottom: 3%
 
+
+#name:after
+  content: ""
+  border-bottom: 2px solid
+  transform: scaleX(0)
+  display: block
+  padding-top: 10px
+  transition: all 0.2s ease-in-out
+
+.try
+  #name:after
+    transform: scaleX(1)
 
 body
   margin: 0
