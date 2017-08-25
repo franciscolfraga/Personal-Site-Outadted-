@@ -10,7 +10,7 @@ $(window).scroll(function() {
     } else {
         $(".about").removeClass("style11b");
     }
-    if (scroll >= 500) {
+    if (scroll >= 700) {
         $(".about").addClass("scrollopacity");
     } else {
         $(".about").removeClass("scrollopacity");
@@ -118,25 +118,14 @@ $(function() {
   });
 });
 
-window.setInterval(function(){
-
-  var bool = Math.floor(Math.random() * 5) + 0;
-  console.log(bool);
-
+/*window.setInterval(function(){
+  var bool = Math.floor(Math.random() * 2) + 0;
+  console.log(bool)
   if(bool==0){
-    $(".spinner:after").css("border", " 2px solid rgba(255, 255, 255, 0)");
+    $(".spinner::after").css("border", " 2px solid transparent");
   }
-  else if(bool==1){
-    setTimeout(function(){
-    }, 2000);
-  }
-  else if(bool==2){
-    $("#name:after").css("transform-origin", " 100% 50%");
-    $("#cover").addClass("try");
-    setTimeout(function(){
-      $("#name:after").css("transform-origin", " 50% 100%");
-      $("#cover").removeClass("try");
-    }, 2000);
+  else if( bool==1){
+    $(".spinner::after").css("border", " 2px solid black");
   }
 
-}, 200');
+}, 2000);*/
