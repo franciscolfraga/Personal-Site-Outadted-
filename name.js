@@ -20,7 +20,7 @@
 			x : x,
 			y: y
 		};
-		this.r =  Math.random()*2 + 2;
+		this.r =  2.5;
 		this.vx = (Math.random()-0.5)*20;
 		this.vy = (Math.random()-0.5)*20;
 		this.accX = 0;
@@ -29,10 +29,12 @@
 
 		this.color = colors[Math.floor(Math.random()*6)];
 	}
-
+  var ok = [];
+  var myc=0;
 	Particle.prototype.render = function() {
 
-
+    ok.push(this);
+    myc++;
 		this.accX = (this.dest.x - this.x)/275;
 		this.accY = (this.dest.y - this.y)/275;
 		this.vx += this.accX;
@@ -59,11 +61,23 @@
 			this.vy += this.accY;
 		}
 
+
+	}
+
+  function onScroll(){
+    var height = $(window).scrollTop();
+    if(height<700){
+    for (var i = 0; i < amount; i++) {
+      ok[i].vy+=Math.random()*3 + -1.5;
+      ok[i].vx+=Math.random()*6 + -3;
+		}
+  }
 	}
 
 	function onMouseMove(e){
+    var height = $(window).scrollTop();
 		mouse.x = e.clientX;
-		mouse.y = e.clientY;
+		mouse.y = e.clientY+height;
 	}
 
 	function onTouchMove(e){
@@ -84,7 +98,7 @@ function onTouchEnd(e){
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-		ctx.font = "bold "+(ww/15)+"px sans-serif";
+		ctx.font = "bold "+(ww/14.5)+"px Arial";
 		ctx.textAlign = "center";
 		ctx.fillText(copy.value, ww/2, wh/2);
 
@@ -121,6 +135,7 @@ function onTouchEnd(e){
 
 	copy.addEventListener("keyup", initScene);
 	window.addEventListener("resize", initScene);
+  window.addEventListener("scroll", onScroll);
 	window.addEventListener("mousemove", onMouseMove);
 	window.addEventListener("touchmove", onTouchMove);
 	window.addEventListener("click", onMouseClick);

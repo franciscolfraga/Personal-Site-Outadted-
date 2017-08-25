@@ -1,16 +1,16 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 600) {
+    if (scroll >= 700) {
         $(".balls").addClass("scrollabout");
     } else {
         $(".balls").removeClass("scrollabout");
     }
-    if (scroll >= 550) {
+    if (scroll >= 500) {
         $(".about").addClass("style11b");
     } else {
         $(".about").removeClass("style11b");
     }
-    if (scroll >= 700) {
+    if (scroll >= 500) {
         $(".about").addClass("scrollopacity");
     } else {
         $(".about").removeClass("scrollopacity");
