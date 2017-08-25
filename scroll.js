@@ -5,7 +5,7 @@ $(window).scroll(function() {
     } else {
         $(".balls").removeClass("scrollabout");
     }
-    if (scroll >= 400) {
+    if (scroll >= 550) {
         $(".about").addClass("style11b");
     } else {
         $(".about").removeClass("style11b");
@@ -117,15 +117,3 @@ $(function() {
     }
   });
 });
-
-/*window.setInterval(function(){
-  var bool = Math.floor(Math.random() * 2) + 0;
-  console.log(bool)
-  if(bool==0){
-    $(".spinner::after").css("border", " 2px solid transparent");
-  }
-  else if( bool==1){
-    $(".spinner::after").css("border", " 2px solid black");
-  }
-
-}, 2000);*/

@@ -9,7 +9,6 @@ html
 		script( src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
 		script( src="scroll.js")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
-		//script( src="name.js")
 		title Francisco Fraga
 	body
 		div#cover
@@ -23,9 +22,10 @@ html
 						a#ball-2(href="#about")
 						a#ball-3(href="")
 						a#ball-4(href="")
-					h1.myname#name.spinner
-						|FRANCISCO FRAGA
-						.spinner1
+					canvas#scene
+						input#copy(type=text, value='FRANCISCO FRAGA')
+					//h1.myname#name.spinner
+						//|FRANCISCO FRAGA
 		div.about#about
 					h1.atitle
 						|ABOUT ME
@@ -129,3 +129,5 @@ html
 										td.rate-twostars-6
 		div.footer
 			H1 FOOTER
+		head
+			script( src="name.js")

@@ -12,11 +12,21 @@
   &:after, &::before
     content: ''
     display: block
-  &:hover
-    font-size: 100px
-
+#scene
+  width: 100%
+  padding: 0
+  margin: auto
+  display: block
+  padding-top: 0px
+input
+  height: 100%
+  width: 100%
+  bacground: red
+  border: 2px solid
+  text-align: center
+  left: calc(50% - 125px)
 .spinner
-  padding: 3% 0
+  padding: 3% 3%
   &:after
     position: absolute
     width: 100%
@@ -24,7 +34,7 @@
     top: -2px
     left: -2px
     border: 2px solid rgba(255, 255, 255, 0)
-    animation: growing 6s ease-in-out infinite
+    animation: growing 5s ease-in-out infinite
     border-top-color: black
     transform-origin: 0% 50%
   &:before
@@ -35,17 +45,16 @@
     left: -2px
     border: 2px solid rgba(255, 255, 255, 0)
     border-bottom-color: black
-    animation: growingv 6s ease-in-out infinite
+    animation: growingv 5s ease-in-out infinite
     transform-origin: 100% 50%
-
 @keyframes growing
   0%
       transform: scaleX(0)
   5%
       transform: scaleX(1)
-  25%
+  15%
       border-right-color: rgba(255, 255, 255, 0)
-  28%
+  18%
       border-top-color: black
       border-right-color: black
   100%
@@ -53,13 +62,13 @@
 @keyframes growingv
   0%
       transform: scaleX(0)
-  10%
+  6%
       transform: scaleX(0)
-  15%
+  11%
       transform: scaleX(1)
-  36%
+  20%
       border-left-color: rgba(255, 255, 255, 0)
-  39%
+  23%
       border-bottom-color: black
       border-left-color: black
   100%

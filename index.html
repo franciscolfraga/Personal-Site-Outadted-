@@ -8,16 +8,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="scroll.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--script( src="name.js")-->
     <title>Francisco Fraga</title>
   </head>
   <body>
     <div id="cover">
       <nav id="mynav" data-spy="affix" data-offset-top="1"><a id="nav-about" href="#about">ABOUT</a><a id="nav-proj">PROJECTS</a><a id="nav-res">RESUME</a><a id="nav-cont">CONTACT</a></nav>
       <nav class="balls"><a id="ball-1" href="#cover"></a><a id="ball-2" href="#about"></a><a id="ball-3" href=""></a><a id="ball-4" href=""></a></nav>
-      <h1 id="name" class="myname spinner">FRANCISCO FRAGA
-        <div class="spinner1"></div>
-      </h1>
+      <canvas id="scene">
+        <input id="copy" value="FRANCISCO FRAGA">
+      </canvas>
+      <!--h1.myname#name.spinner//|FRANCISCO FRAGA
+      -->
     </div>
     <div id="about" class="about">
       <h1 class="atitle">ABOUT ME</h1>
@@ -133,5 +134,8 @@
     <div class="footer">
       <H1>FOOTER</H1>
     </div>
+    <head>
+      <script src="name.js"></script>
+    </head>
   </body>
 </html>
