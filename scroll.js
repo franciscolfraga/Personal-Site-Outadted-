@@ -118,17 +118,13 @@ $(function() {
   });
 });
 
-/*window.setInterval(function(){
+window.setInterval(function(){
 
-  var bool = Math.floor(Math.random() * 3) + 0;
+  var bool = Math.floor(Math.random() * 5) + 0;
   console.log(bool);
 
   if(bool==0){
-    $("#name:after").css("transform-origin", " 0%");
-    $("#cover").addClass("try");
-    setTimeout(function(){
-      $("#cover").removeClass("try");
-    }, 2000);
+    $(".spinner:after").css("border", " 2px solid rgba(255, 255, 255, 0)");
   }
   else if(bool==1){
     setTimeout(function(){
@@ -143,4 +139,4 @@ $(function() {
     }, 2000);
   }
 
-}, 3000);*/
+}, 200');
