@@ -119,10 +119,10 @@ function onTouchEnd(e){
 	}
 
 	function onMouseClick(){
-		radius++;
-		if(radius ===5){
-			radius = 0;
-		}
+		radius=3;
+		setTimeout(function(){
+    radius=1;
+}, 500);
 	}
 
 	function render(a) {
