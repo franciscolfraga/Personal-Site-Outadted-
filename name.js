@@ -66,7 +66,7 @@
 
   function onScroll(){
     var height = $(window).scrollTop();
-    if(height<700){
+    if(height<700 && window.innerWidth>=1000){
     for (var i = 0; i < amount; i++) {
       ok[i].vy+=Math.random()*3 + -1.5;
       ok[i].vx+=Math.random()*6 + -3;
@@ -119,10 +119,13 @@ function onTouchEnd(e){
 	}
 
 	function onMouseClick(){
+		var height = $(window).scrollTop();
+    if(height<700){
 		radius=3;
 		setTimeout(function(){
     radius=1;
-}, 500);
+}, 300);
+}
 	}
 
 	function render(a) {
