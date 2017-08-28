@@ -1,6 +1,6 @@
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 700) {
+    if (scroll >= 700 && scroll <3100) {
         $(".balls").addClass("scrollabout");
     } else {
         $(".balls").removeClass("scrollabout");
@@ -95,6 +95,22 @@ $(window).scroll(function() {
     } else {
         $(".about").removeClass("scroll-skill4");
     }
+    if (scroll >= 3100) {
+        $(".documents").addClass("myhrb");
+        $(".about").addClass("changebg");
+        $(".balls").addClass("scrollabout1");
+    } else {
+        $(".documents").removeClass("myhrb");
+        $(".about").removeClass("changebg");
+        $(".balls").removeClass("scrollabout1");
+    }
+    if (scroll >= 3300) {
+        $(".documents").addClass("revealtable");
+    } else {
+        $(".documents").removeClass("revealtable");
+
+    }
+
     if (scroll >= 0 && scroll < 700) {
         $(".balls").addClass("scrollcover");
     } else {
@@ -111,7 +127,7 @@ $(function() {
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 400);
+        }, 600);
         return false;
       }
     }

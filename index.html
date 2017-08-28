@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style/myindex.css">
     <link href="https://fonts.googleapis.com/css?family=Economica:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,15 +14,13 @@
   <body>
     <div id="cover">
       <nav id="mynav" data-spy="affix" data-offset-top="1"><a id="nav-about" href="#about">ABOUT</a><a id="nav-proj">DOCUMENTS</a><a id="nav-cont">CONTACT</a></nav>
-      <nav class="balls"><a id="ball-1" href="#cover"></a><a id="ball-2" href="#about"></a><a id="ball-3" href=""></a><a id="ball-4" href=""></a></nav>
+      <nav class="balls"><a id="ball-1" href="#cover"></a><a id="ball-2" href="#about1"></a><a id="ball-3" href="#docs"></a><a id="ball-4" href=""></a></nav>
       <canvas id="scene">
         <input id="copy" value="FRANCISCO FRAGA">
       </canvas>
-      <!--h1.myname#name.spinner-->
-      <!--|FRANCISCO FRAGA-->
     </div>
     <div id="about" class="about">
-      <h1 class="atitle">ABOUT ME</h1>
+      <h1 id="about1" class="atitle">ABOUT ME</h1>
       <hr class="style11">
       <div id="me"><img id="myphoto" src="img/me.jpg"></div>
       <div id="atext">
@@ -131,8 +130,25 @@
         </table>
       </h1>
     </div>
-    <div class="footer">
-      <H1>DOCUMENTS</H1>
+    <div class="documents">
+      <h1 id="docs" class="atitle2">DOCUMENTS</h1>
+      <hr class="myhr">
+      <table class="docstable">
+        <tbody class="mydocstable">
+          <tr class="my_docs">
+            <td class="doctd1">
+              <div class="docdiv1"><span>Résumé</span></div>
+            </td>
+            <td class="doctd2">
+              <div class="docdiv2"><span>Common European Framework Certification</span></div>
+            </td>
+            <td class="doctd3">
+              <div class="docdiv3"><span>Erasmus+ OLS Language Assessment</span></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>footer missing</h1>
     </div>
     <head>
       <script src="name.js"></script>

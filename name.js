@@ -98,7 +98,7 @@ function onTouchEnd(e){
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-		ctx.font = "bold "+(ww/14.5)+"px Arial";
+		ctx.font = "bold "+(ww/18)+"px Arial";
 		ctx.textAlign = "center";
 		ctx.fillText(copy.value, ww/2, wh/2);
 
@@ -107,8 +107,8 @@ function onTouchEnd(e){
 		ctx.globalCompositeOperation = "screen";
 
 		particles = [];
-		for(var i=0;i<ww;i+=Math.round(ww/220)){
-			for(var j=0;j<wh;j+=Math.round(ww/220)){
+		for(var i=0;i<ww;i+=Math.round(ww/210)){
+			for(var j=0;j<wh;j+=Math.round(ww/210)){
 				if(data[ ((i + j*ww)*4) + 3] > 150){
 					particles.push(new Particle(i,j));
 				}
