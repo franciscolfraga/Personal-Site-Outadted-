@@ -104,7 +104,7 @@ $(window).scroll(function() {
         $(".about").removeClass("changebg");
         $(".balls").removeClass("scrollabout1");
     }
-    if (scroll >= 3300) {
+    if (scroll >= 3200) {
         $(".documents").addClass("revealtable");
     } else {
         $(".documents").removeClass("revealtable");

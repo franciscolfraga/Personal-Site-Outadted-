@@ -120,7 +120,7 @@ body
 
 
 #cover
-  background: url(../img/mycover.jpg) no-repeat center center fixed
+  background: url(../img/bulb-test.jpg) no-repeat center center fixed
   -webkit-background-size: cover
   -moz-background-size: cover
   -o-background-size: cover
@@ -584,7 +584,7 @@ body
 .docstable
   height: 350px
   width: 70%
-  margin: 80px auto
+  margin: 50px auto
   margin-bottom: 200px
   opacity: 0
   transition: all .5s ease-in-out
@@ -600,25 +600,42 @@ body
     height: 20px
     padding-left: 20px
     padding-right: 20px
-    transition: all .5s ease-in-out
+    transition: all .3s ease-in-out
     font-size: 26px
     &:hover
-      div
+      .docdiv2
         cursor: pointer
         transform: scale(1.05)
-        background: rgba(0, 0, 0, 0.5)
+        filter: brightness(35%)
+      .docdiv3
+        cursor: pointer
+        transform: scale(1.05)
+        filter: brightness(35%)
+      .docdiv1
+        cursor: pointer
+        transform: scale(1.05)
+        filter: brightness(35%)
       span
         color: black
-
     div
       height: 0px
-      width: 250px
+      width: 230px
       margin: auto
-      background: rgba(0, 0, 0, 0.1)
       transition: all .3s ease-in-out
       justify-content: center
+      background: rgba(0, 0, 0, 0.1)
+      filter: brightness(70%)
       display: flex
       align-items: center
       span
         transition: all .3s ease-in-out
         color: transparent
+    .docdiv1
+      background: url(../img/Resume_thumbnail.png)
+      background-size: 100% 100%
+    .docdiv2
+      background: url(../img/cef_thumbnail.png)
+      background-size: 100% 100%
+    .docdiv3
+      background: url(../img/assessment_thumbnail.png)
+      background-size: 100% 100%
