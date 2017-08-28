@@ -750,7 +750,7 @@ body {
 }
 
 .myhrb {
-  background-color: #d4d4bc;
+  background-color: #e4e4d8;
 }
 
 .myhrb .myhr {
@@ -758,7 +758,7 @@ body {
 }
 
 .changebg {
-  background-color: #d4d4bc;
+  background-color: #e4e4d8;
 }
 
 .docstable {
@@ -815,7 +815,7 @@ body {
   transition: all .3s ease-in-out;
   justify-content: center;
   background: rgba(0, 0, 0, 0.1);
-  filter: brightness(70%);
+  filter: brightness(80%);
   display: flex;
   align-items: center;
 }
