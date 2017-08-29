@@ -828,10 +828,15 @@ body {
 
 .contacts h3 {
   transition: all 1s ease-in-out;
-  padding-top: 50px;
+  padding-top: 30px;
   font-family: 'Economica', sans-serif;
   font-size: 25px;
   opacity: 0;
+}
+
+.contacts .copyright {
+  padding-top: 20px;
+  font-size: 16px;
 }
 
 .bgbcsdocs {
