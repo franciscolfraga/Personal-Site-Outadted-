@@ -14,23 +14,26 @@ html
 	body
 		div#cover
 			nav#mynav( data-spy="affix" data-offset-top="1")
-				a#nav-about(href="#about") ABOUT
-				a#nav-proj(href="#docs") DOCUMENTS
-				a#nav-cont CONTACT
+				div.try1
+					a.slider#nav-about(href="#about") ABOUT
+				div.try2
+					a.slider#nav-proj(href="#docs") DOCUMENTS
+				div.try3
+					a.slider#nav-cont(href="#contacts") CONTACT
+			canvas#scene
+				input#copy(type=text, value='FRANCISCO FRAGA')
 			nav.balls
 				a#ball-1(href="#cover")
 				a#ball-2(href="#about1")
 				a#ball-3(href="#docs")
-				a#ball-4(href="")
-			canvas#scene
-				input#copy(type=text, value='FRANCISCO FRAGA')
+				a#ball-4(href="#contacts")
+			
 		div.about#about
 			h1.atitle#about1
 				|ABOUT ME
 			hr.style11
 			div#me
 				img#myphoto(src="img/me.jpg")
-
 			div#atext
 				p Hello, in case you didn't noticed my name is Francisco and I was born on the 3rd of August, 1995 at Porto. All my education before university took place in my hometown, Mirandela, that is a little city located at the North of Portugal. I played table tennis from 6 to 19 years old, I was very happy but decided to stop because I moved to Porto to study and I didn't had time to practice. I currently study in Faculdade de Engenharia da Universidade do Porto attending the Master in Electrical and Computer Engineering. Some of my biggest interests are sports, administration of computer systems and networks and I consider myself a code enthusiast.
 			h1.atitle1
@@ -147,7 +150,27 @@ html
 								div.docdiv3
 									span
 										|Erasmus+ OLS Language Assessment
-			h1
-				|footer missing
+		div.contacts#contacts
+			hr.conthr
+			h3
+				|franciscolfraga@gmail.com
+			table.logos
+				tbody.ltable
+					tr
+						td
+							div.linkedin
+								img(src="img/logos/linkedin.png")
+						td
+							div.github
+								img(src="img/logos/github.png")
+						td
+							div.googlep
+								img(src="img/logos/google-plus.png")
+						td
+							div.fb
+								img(src="img/logos/facebook.png")
+						td
+							div.insta
+								img(src="img/logos/instagram.png")
 		head
 			script( src="name.js")

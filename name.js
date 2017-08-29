@@ -65,8 +65,8 @@
 	}
 
   function onScroll(){
-    var height = $(window).scrollTop();
-    if(height<700 && window.innerWidth>=1000){
+    var height = $(window).scrollTop()+ window.innerHeight;
+    if(height<1700 && window.innerWidth>=1000){
     for (var i = 0; i < amount; i++) {
       ok[i].vy+=Math.random()*3 + -1.5;
       ok[i].vx+=Math.random()*6 + -3;
@@ -76,8 +76,8 @@
 
 	function onMouseMove(e){
     var height = $(window).scrollTop();
-		mouse.x = e.clientX;
-		mouse.y = e.clientY+height;
+		mouse.x = e.clientX+12;
+		mouse.y = e.clientY+height-65;
 	}
 
 	function onTouchMove(e){
@@ -98,9 +98,9 @@ function onTouchEnd(e){
 
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-		ctx.font = "bold "+(ww/18)+"px Arial";
+		ctx.font = "bold "+(ww/18)+"px 'Signika', sans-serif";
 		ctx.textAlign = "center";
-		ctx.fillText(copy.value, ww/2, wh/2);
+		ctx.fillText(copy.value, ww/2, 300);
 
 		var data  = ctx.getImageData(0, 0, ww, wh).data;
 		ctx.clearRect(0, 0, canvas.width, canvas.height);

@@ -13,11 +13,15 @@
   </head>
   <body>
     <div id="cover">
-      <nav id="mynav" data-spy="affix" data-offset-top="1"><a id="nav-about" href="#about">ABOUT</a><a id="nav-proj" href="#docs">DOCUMENTS</a><a id="nav-cont">CONTACT</a></nav>
-      <nav class="balls"><a id="ball-1" href="#cover"></a><a id="ball-2" href="#about1"></a><a id="ball-3" href="#docs"></a><a id="ball-4" href=""></a></nav>
+      <nav id="mynav" data-spy="affix" data-offset-top="1">
+        <div class="try1"><a id="nav-about" href="#about" class="slider">ABOUT</a></div>
+        <div class="try2"><a id="nav-proj" href="#docs" class="slider">DOCUMENTS</a></div>
+        <div class="try3"><a id="nav-cont" href="#contacts" class="slider">CONTACT</a></div>
+      </nav>
       <canvas id="scene">
         <input id="copy" value="FRANCISCO FRAGA">
       </canvas>
+      <nav class="balls"><a id="ball-1" href="#cover"></a><a id="ball-2" href="#about1"></a><a id="ball-3" href="#docs"></a><a id="ball-4" href="#contacts"></a></nav>
     </div>
     <div id="about" class="about">
       <h1 id="about1" class="atitle">ABOUT ME</h1>
@@ -145,7 +149,31 @@
           </tr>
         </tbody>
       </table>
-      <h1>footer missing</h1>
+    </div>
+    <div id="contacts" class="contacts">
+      <hr class="conthr">
+      <h3>franciscolfraga@gmail.com</h3>
+      <table class="logos">
+        <tbody class="ltable">
+          <tr>
+            <td>
+              <div class="linkedin"><img src="img/logos/linkedin.png"></div>
+            </td>
+            <td>
+              <div class="github"><img src="img/logos/github.png"></div>
+            </td>
+            <td>
+              <div class="googlep"><img src="img/logos/google-plus.png"></div>
+            </td>
+            <td>
+              <div class="fb"><img src="img/logos/facebook.png"></div>
+            </td>
+            <td>
+              <div class="insta"><img src="img/logos/instagram.png"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <head>
       <script src="name.js"></script>

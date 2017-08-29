@@ -2,63 +2,16 @@
   font-family: 'Economica', sans-serif
   width: 100%
   padding: 0
-  margin: auto
+  margin: 0px auto
   display: block
   padding-top: 0px
+
 input
   height: 100%
   width: 100%
   border: 2px solid
   text-align: center
   left: calc(50% - 125px)
-.spinner
-  padding: 3% 3%
-  &:after
-    position: absolute
-    width: 100%
-    height: 100%
-    top: -2px
-    left: -2px
-    border: 2px solid rgba(255, 255, 255, 0)
-    animation: growing 5s ease-in-out infinite
-    border-top-color: black
-    transform-origin: 0% 50%
-  &:before
-    position: absolute
-    width: 100%
-    height: 100%
-    top: -2px
-    left: -2px
-    border: 2px solid rgba(255, 255, 255, 0)
-    border-bottom-color: black
-    animation: growingv 5s ease-in-out infinite
-    transform-origin: 100% 50%
-@keyframes growing
-  0%
-      transform: scaleX(0)
-  5%
-      transform: scaleX(1)
-  15%
-      border-right-color: rgba(255, 255, 255, 0)
-  18%
-      border-top-color: black
-      border-right-color: black
-  100%
-      border: 2px solid rgba(255, 255, 255, 0)
-@keyframes growingv
-  0%
-      transform: scaleX(0)
-  6%
-      transform: scaleX(0)
-  11%
-      transform: scaleX(1)
-  20%
-      border-left-color: rgba(255, 255, 255, 0)
-  23%
-      border-bottom-color: black
-      border-left-color: black
-  100%
-      border: 2px solid rgba(255, 255, 255, 0)
 
 body
   margin: 0
@@ -66,37 +19,57 @@ body
 
 #mynav
   text-align: center
-  font-family: 'Economica', sans-serif
-  width: 100%
   position: relative
+  font-family: 'Economica', sans-serif
+  width: 70%
   margin-left: auto
   margin-right: auto
-  padding-top: 10px
+  padding-top: 30px
   padding-bottom: 10px
   background-opacity: 100%
+  text-decoration: none
   a
-    font-size: 20px
-    margin-left: 30px
-    margin-right: 30px
+    font-size: 22px
+    width: 20%
+    padding: 2px
     cursor: pointer
     color: rgb(61, 61, 61)
+    text-decoration: none
 
+[class*="try"]
+    margin-left: 20px
+    margin-right: 20px
+    display: inline-block
+    &::after, &::before
+      display: block
+      content: ""
+      transition: all 0.2s ease-in-out
+      width: 100%
+      height: 100%
+      border: 1px solid transparent
+      border-bottom-color: rgb(61, 61, 61)
+      transform: scaleX(0)
+    &::after
+      transform-origin: 0% 50%
+    &::before
+      transform-origin: 100% 50%
+    &:hover
+      &::after, &::before
+        transform: scaleX(1)
 .balls
   z-index: 3
   position: fixed
   width: 100px
   height: 100px
   right: 3%
-  top: 300px
+  top: calc(50% - 50px)
   margin-left: 30px
   background-opacity: 100%
-
   a
     margin-left: auto
     margin-right: auto
     margin-top: 5%
     margin-bottom: 5%
-
     background-color: white
     border-color: black
     border: solid 0.1px
@@ -107,8 +80,9 @@ body
     margin-top: 10px
     cursor: pointer
     text-decoration: none
-    display: block
     transition: all .5s ease-in-out
+  a:hover
+      background-color: rgba(61, 61, 61, 0.2)
   a:visited
     text-decoration: none
     display: block
@@ -185,6 +159,11 @@ body
 
 .scrollabout1
   #ball-3
+    background-color: rgb(61, 61, 61)
+    height: 16%
+    width: 16%
+.scrollabout2
+  #ball-4
     background-color: rgb(61, 61, 61)
     height: 16%
     width: 16%
@@ -585,7 +564,7 @@ body
   height: 350px
   width: 70%
   margin: 50px auto
-  margin-bottom: 200px
+  margin-bottom: 50px
   opacity: 0
   transition: all .5s ease-in-out
 
@@ -595,6 +574,7 @@ body
   .my_docs
     div
       height: 300px
+      width: 230px
 .my_docs
   td
     height: 20px
@@ -619,7 +599,7 @@ body
         color: black
     div
       height: 0px
-      width: 230px
+      width: 0px
       margin: auto
       transition: all .3s ease-in-out
       justify-content: center
@@ -639,3 +619,104 @@ body
     .docdiv3
       background: url(../img/assessment_thumbnail.png)
       background-size: 100% 100%
+
+.contacts
+  height: 300px
+  width: 100%
+  background-color: rgb(245, 245, 220)
+  transition: all .5s ease-in-out
+  text-align: center
+  &::before
+    display: block
+    width: 70%
+    border: 1px solid black
+  h3
+    transition: all 1s ease-in-out
+    padding-top: 50px
+    font-family: 'Economica', sans-serif
+    font-size: 25px
+    opacity: 0
+
+.bgbcsdocs
+  background-color: rgb(228, 228, 216)
+
+.bgbcscont
+  .conthr
+    width: 70%
+    opacity: 1
+  h3
+    opacity: 1
+
+.logos
+  width: 70%
+  margin: 60px auto 0
+  padding: 30px
+  td
+    div
+      margin: auto
+      vertical-allign: middle
+      height: 90px
+      width: 90px
+      display: flex
+      justify-content: center
+      border-radius: 50%
+      &::after , &::before
+        filter: grayscale(65%)
+        position: absolute
+        content: ""
+        transition: all 0.2s ease-in-out
+        height: 90px
+        width: 90px
+        border: 1.5px solid transparent
+        transform: scaleX(0)
+      &::after
+        transform-origin: 0% 50%
+      &::before
+        transform-origin: 100% 50%
+      &:hover
+        cursor: pointer
+        &::after, &::before
+          transform: scaleX(1)
+        img
+          filter: grayscale(0%)
+          max-width: 58px
+          max-height: 58px
+      img
+        margin: auto
+        height: auto
+        width: auto
+        max-width: 50px
+        max-height: 50px
+        transition: all 0.2s ease-in-out
+        filter: grayscale(100%)
+    .fb
+      &::after
+        border-top-color: #3B5998
+      &::before
+        border-bottom-color: #3B5998
+    .insta
+      &::after
+        border-top-color: #CD486B
+      &::before
+        border-bottom-color: #CD486B
+    .googlep
+      &::after
+        border-top-color: #D34836
+      &::before
+        border-bottom-color: #D34836
+    .github
+      &::after
+        border-top-color: #6E5494
+      &::before
+        border-bottom-color: #6E5494
+    .linkedin
+      &::after
+        border-top-color: #0077B5
+      &::before
+        border-bottom-color: #0077B5
+.conthr
+  transition: all 0.5s ease-in-out
+  margin: 0 auto
+  border: 1px solid rgb(61, 61, 61)
+  width: 0%
+  opacity: 0
